@@ -16,7 +16,11 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {label: 'English'},
+      zh: {label: '简体中文'},
+    },
   },
 
   presets: [
@@ -27,10 +31,23 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/TheAiCommunity/agent-saas-docs/edit/main/',
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        indexDocs: true,
+        indexBlog: false,
+        language: ['en', 'zh'],
+      },
     ],
   ],
 
@@ -51,14 +68,28 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/docs/guides/first-task',
-          label: 'Guides',
+          to: '/docs/skills/',
+          label: 'Skills',
+          position: 'left',
+        },
+        {
+          to: '/docs/integrations/mcp',
+          label: 'Plugins',
           position: 'left',
         },
         {
           to: '/docs/developer/api-reference',
           label: 'API reference',
           position: 'left',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
+          to: '/',
+          label: 'Home',
+          position: 'right',
         },
         {
           href: 'https://saas.theaicommunity.net/',

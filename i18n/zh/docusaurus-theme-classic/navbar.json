@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Agent SaaS",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Agent SaaS logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Skills": {
+    "message": "技能",
+    "description": "Navbar item with label Skills"
+  },
+  "item.label.Plugins": {
+    "message": "插件",
+    "description": "Navbar item with label Plugins"
+  },
+  "item.label.API reference": {
+    "message": "API 参考",
+    "description": "Navbar item with label API reference"
+  },
+  "item.label.Home": {
+    "message": "首页",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Product": {
+    "message": "产品",
+    "description": "Navbar item with label Product"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

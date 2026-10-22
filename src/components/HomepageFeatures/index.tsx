@@ -60,8 +60,11 @@ function Feature({title, description}: FeatureItem) {
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
+    <section className={clsx('section', styles.features)}>
       <div className="container">
+        <Heading as="h2" className="text--center">
+          Key features
+        </Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

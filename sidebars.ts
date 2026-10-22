@@ -3,6 +3,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   docs: [
     'intro',
+    'skills/index',
     {
       type: 'category',
       label: 'Getting started',
@@ -15,7 +16,6 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'guides/first-task'},
       items: [
         'guides/first-task',
-        'guides/skills',
         'guides/assets',
         'guides/review-and-publish',
         'guides/automation',

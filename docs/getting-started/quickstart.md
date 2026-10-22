@@ -21,7 +21,7 @@ Connection methods differ per platform — some use OAuth, Xiaohongshu uses a gu
 
 ## 3. Pick a template and skills
 
-Templates define the shape and goal of the content. Skills are optional writing add-ons you can install from the skill market; a task can use up to ten. See [Skills](/docs/guides/skills).
+Templates define the shape and goal of the content. Skills are optional writing add-ons you can install from the skill market; a task can use up to ten. See [Skills](/docs/skills/).
 
 ## 4. Create an automation task
 

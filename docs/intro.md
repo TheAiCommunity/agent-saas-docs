@@ -19,7 +19,7 @@ Agent SaaS is an AI content production and social media automation platform: it 
 - [Quickstart](/docs/getting-started/quickstart) — from sign-in to a published post
 - [Accounts and sign-in](/docs/getting-started/accounts) — tenants, passwords, sessions
 - [Create your first task](/docs/guides/first-task) — the parts of an automation task
-- [Skills](/docs/guides/skills) — installing and using writing skills
+- [Skills](/docs/skills/) — installing and using writing skills
 - [Assets and images](/docs/guides/assets) — generated images vs. your library
 - [Review and publish](/docs/guides/review-and-publish) — from draft to published post
 - [Social platform connections](/docs/integrations/platforms) — Xiaohongshu, WeChat, Douyin, Bilibili, Twitter

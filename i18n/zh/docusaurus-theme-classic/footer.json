@@ -1,0 +1,58 @@
+{
+  "link.title.Docs": {
+    "message": "文档",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Developers": {
+    "message": "开发者",
+    "description": "The title of the footer links column with title=Developers in the footer"
+  },
+  "link.title.Product": {
+    "message": "产品",
+    "description": "The title of the footer links column with title=Product in the footer"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Getting started": {
+    "message": "快速上手",
+    "description": "The label of footer link with label=Getting started linking to /docs/getting-started/quickstart"
+  },
+  "link.item.label.Guides": {
+    "message": "指南",
+    "description": "The label of footer link with label=Guides linking to /docs/guides/first-task"
+  },
+  "link.item.label.Integrations": {
+    "message": "集成",
+    "description": "The label of footer link with label=Integrations linking to /docs/integrations/platforms"
+  },
+  "link.item.label.FAQ": {
+    "message": "常见问题",
+    "description": "The label of footer link with label=FAQ linking to /docs/reference/faq"
+  },
+  "link.item.label.Developer overview": {
+    "message": "开发者概览",
+    "description": "The label of footer link with label=Developer overview linking to /docs/developer/overview"
+  },
+  "link.item.label.API reference": {
+    "message": "API 参考",
+    "description": "The label of footer link with label=API reference linking to /docs/developer/api-reference"
+  },
+  "link.item.label.Examples": {
+    "message": "示例",
+    "description": "The label of footer link with label=Examples linking to /docs/developer/examples"
+  },
+  "link.item.label.Agent SaaS": {
+    "message": "Agent SaaS",
+    "description": "The label of footer link with label=Agent SaaS linking to https://saas.theaicommunity.net/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/TheAiCommunity"
+  },
+  "copyright": {
+    "message": "版权所有 © 2026 The AI Community. 基于 Docusaurus 构建。",
+    "description": "The footer copyright"
+  }
+}
