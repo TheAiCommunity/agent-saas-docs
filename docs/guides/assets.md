@@ -3,7 +3,7 @@ title: Assets and images
 description: The asset library and the two ways tasks get images.
 ---
 
-Assets are the images your workspace owns: uploaded files, generated images, and covers. They are organized in groups and can be reused across tasks.
+Assets are the images your tenant owns: uploaded files, generated images, and covers. They are organized in groups and can be reused across tasks.
 
 ## Where images come from
 

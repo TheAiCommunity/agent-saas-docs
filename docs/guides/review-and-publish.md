@@ -13,7 +13,7 @@ description: What happens between a generated draft and a published post.
 
 ## When review is required
 
-Review is required by default (`approval_required` off and `auto_publish` off means a human looks at everything). A task can skip review with `auto_publish`, but some situations force a review anyway:
+By default every draft waits for review before publishing; a task only publishes on its own when `auto_publish` is enabled. Some situations force a review regardless:
 
 - WeChat mass send always requires manual approval.
 - Content that hits banned words, misses required disclosures, contains links to non-allowed domains, or exceeds length limits is flagged for review.
@@ -21,6 +21,6 @@ Review is required by default (`approval_required` off and `auto_publish` off me
 
 ## After publishing
 
-Publications are tracked per post: status, metrics (views, likes, and so on), and comments. Metrics and comments are collected on demand or automatically, and feed the task's reports. If a publication failed — for example, a platform rejected the post — you can retry it from the task view.
+Publications are tracked per post: status, metrics (views, likes, and so on), and comments. Metrics and comments are collected on demand or automatically, and feed the task's reports. If a publication failed (for example, the platform rejected the post), you can retry it from the task view.
 
 <!-- TODO: final copy from the product team: review UI walkthrough, approval workflows for teams, and examples of flagged content. -->

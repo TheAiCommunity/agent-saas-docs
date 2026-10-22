@@ -13,7 +13,7 @@ BASE="https://saas.theaicommunity.net"
 curl -s -X POST "$BASE/v1/auth/login" \
   -H "Content-Type: application/json" \
   -d '{
-    "tenant_code": "your-workspace-code",
+    "tenant_code": "your-tenant-code",
     "login_identifier": "user@example.com",
     "password": "secret"
   }' | jq '.data'
@@ -23,7 +23,7 @@ Save the tokens:
 
 ```bash
 RESP=$(curl -s -X POST "$BASE/v1/auth/login" -H "Content-Type: application/json" \
-  -d '{"tenant_code":"your-workspace-code","login_identifier":"user@example.com","password":"secret"}')
+  -d '{"tenant_code":"your-tenant-code","login_identifier":"user@example.com","password":"secret"}')
 ACCESS=$(echo "$RESP" | jq -r '.data.access_token')
 ```
 

@@ -5,7 +5,7 @@ description: Terms used throughout the product and the API.
 
 | Term | Meaning |
 | --- | --- |
-| Tenant | A customer workspace: its own members, content, connected accounts, and settings |
+| Tenant | A customer space with its own members, content, connected accounts, and settings |
 | Tenant code | Short code identifying a tenant, used at sign-in |
 | Member | A user inside a tenant |
 | Template | A reusable content shape for a platform; can provide a default goal |

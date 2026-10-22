@@ -7,9 +7,9 @@ Skills are reusable writing add-ons. A skill carries instructions — and possib
 
 ## Getting skills
 
-Skills come from the skill market, which is maintained on the platform side. Browsing and installing is done from the product UI; what you install becomes a **skill installation** owned by your workspace.
+Skills come from the skill market, which is maintained on the platform side. Browsing and installing is done from the product UI; what you install becomes a **skill installation** owned by your tenant.
 
-Installing a skill does not automatically make it usable by everyone: an admin controls who may use each installation. If a skill is missing from your task's skill list, ask your workspace admin.
+Installing a skill does not automatically make it usable by everyone: an admin controls who may use each installation. If a skill is missing from your task's skill list, ask your tenant admin.
 
 ## Using skills in a task
 

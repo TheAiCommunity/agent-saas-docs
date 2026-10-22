@@ -7,7 +7,7 @@ This page walks through the shortest path to a published post. The product team 
 
 ## What you need
 
-- An account in a tenant (your workspace). Sign-in needs the tenant code plus a username, email, or phone number.
+- An account in a tenant. Sign-in needs the tenant code plus a username, email, or phone number.
 - A social media account on at least one supported platform: Xiaohongshu, WeChat official account, Douyin, Bilibili, or Twitter.
 - A template for the platform you want to publish to.
 

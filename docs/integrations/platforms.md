@@ -20,7 +20,7 @@ For Douyin, Bilibili, and Twitter, connecting an account opens the platform's au
 
 ## Xiaohongshu cookie login
 
-Xiaohongshu has no public publishing API, so the platform maintains a browser login session for each connected account. The login flow guides you through it; afterwards the session is kept alive and refreshed. If a session breaks — for example after a password change on Xiaohongshu — re-login the account from the connections page. You can also reset the account's browser identity if the platform starts rejecting requests.
+Xiaohongshu has no public publishing API, so the platform maintains a browser login session for each connected account. The login flow guides you through it; afterwards the session is kept alive and refreshed. If a session breaks (for example, after a password change on Xiaohongshu), re-login the account from the connections page. You can also reset the account's browser identity if the platform starts rejecting requests.
 
 ## WeChat official account
 

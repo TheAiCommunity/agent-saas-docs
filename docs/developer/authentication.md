@@ -3,7 +3,7 @@ title: Authentication
 description: Signing in, token refresh, auth error codes, and session headers.
 ---
 
-The content API uses bearer tokens issued by the login endpoint. Tokens are scoped to a workspace: a token identifies both the member and the workspace they belong to, and the workspace is taken from the token on every call — you cannot pass a workspace ID to act on another workspace.
+The content API uses bearer tokens issued by the login endpoint. A token identifies one member in one tenant: the tenant comes from the token on every call, so you cannot pass a tenant ID to read another tenant's data.
 
 ## Sign in
 
@@ -14,7 +14,7 @@ Content-Type: application/json
 
 ```json
 {
-  "tenant_code": "your-workspace-code",
+  "tenant_code": "your-tenant-code",
   "login_identifier": "user@example.com",
   "password": "secret"
 }

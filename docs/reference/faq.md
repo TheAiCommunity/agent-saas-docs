@@ -5,7 +5,7 @@ description: Frequently asked questions about Agent SaaS.
 
 ## What is a tenant code?
 
-A short code that identifies your workspace at sign-in. It is not the workspace ID you see in the API — the code is only for logging in.
+A short code that identifies your tenant at sign-in. It is not the tenant ID you see in the API — the code is only for logging in.
 
 ## Why must I change my password after the first login?
 
@@ -17,7 +17,7 @@ Review is required by default. Content also gets flagged for review when it hits
 
 ## How many skills can one task use?
 
-Up to ten. They are applied in the order you list them, and each must be installed in your workspace and authorized for use.
+Up to ten. They are applied in the order you list them, and each must be installed in your tenant and authorized for use.
 
 ## Why can't I use generated images for Douyin?
 
