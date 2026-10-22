@@ -1,25 +1,48 @@
 ---
-title: About Agent SaaS
-description: What Agent SaaS is and how this documentation is organized.
+slug: /
+title: Agent SaaS documentation
+description: What Agent SaaS is, where to start, and where to find every guide and API reference.
+hide_table_of_contents: true
 ---
 
-Agent SaaS is an AI content production and social media automation platform by The AI Community. It is built for individuals and teams that need a steady stream of content: you connect your social media accounts, describe what you want, and the platform generates the articles and images, routes them through review, and publishes them on schedule.
+Agent SaaS is an AI content production and social media automation platform: it generates articles and images from your templates and skills, routes them through review, and publishes them to your connected social accounts on a schedule.
 
-The typical flow:
+<p>
+  <a className="button button--primary button--lg margin-right--md" href="/docs/getting-started/quickstart">Get started</a>
+  <a className="button button--secondary button--lg" href="/docs/developer/api-reference">API reference</a>
+</p>
 
-1. Connect a social media account (Xiaohongshu, WeChat, Douyin, Bilibili, Twitter).
-2. Pick a template, and optionally install writing skills.
-3. Create an automation task with a topic, a schedule, and a publish target.
-4. The platform generates drafts and images.
-5. Content goes through review, gets published, and performance data is collected back into reports.
+## Quick links
 
-## Where to go next
+### Using the product
 
-- [Quickstart](/docs/getting-started/quickstart) covers the shortest path from sign-in to a published post.
-- The [guides](/docs/guides/first-task) explain each part of the product in depth.
-- [Integrations](/docs/integrations/platforms) covers social platform connections and MCP extensions.
-- The [developer guide](/docs/developer/overview) documents the REST API behind the product, down to every endpoint.
+- [Quickstart](/docs/getting-started/quickstart) — from sign-in to a published post
+- [Accounts and sign-in](/docs/getting-started/accounts) — tenants, passwords, sessions
+- [Create your first task](/docs/guides/first-task) — the parts of an automation task
+- [Skills](/docs/guides/skills) — installing and using writing skills
+- [Assets and images](/docs/guides/assets) — generated images vs. your library
+- [Review and publish](/docs/guides/review-and-publish) — from draft to published post
+- [Social platform connections](/docs/integrations/platforms) — Xiaohongshu, WeChat, Douyin, Bilibili, Twitter
 
-## About this documentation
+### Building on the API
 
-The getting started and guides sections describe the product as it works today and are maintained by the product team. The developer section is generated from the backend's OpenAPI specification and is verified against the live service.
+- [Developer overview](/docs/developer/overview) — the three API sets and how to get access
+- [Authentication](/docs/developer/authentication) — sign in, tokens, refresh
+- [API conventions](/docs/developer/conventions) — envelope, errors, headers
+- [Content API reference](/docs/developer/api-reference) — every endpoint
+- [Examples](/docs/developer/examples) — end-to-end curl scripts
+
+### Reference
+
+- [FAQ](/docs/reference/faq)
+- [Glossary](/docs/reference/glossary)
+- [Changelog](/docs/reference/changelog)
+
+## Key features
+
+- **Content automation** — scheduled tasks that generate and publish without manual work
+- **Multi-platform publishing** — Xiaohongshu, WeChat official accounts, Douyin, Bilibili, Twitter
+- **Skills system** — installable writing skills, up to ten per task
+- **Developer API** — a REST API for everything the product does, with interactive Swagger documentation
+
+The product lives at [saas.theaicommunity.net](https://saas.theaicommunity.net/); the landing page with more background is [theaicommunity.net/agent](https://theaicommunity.net/agent).

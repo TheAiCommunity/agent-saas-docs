@@ -46,13 +46,27 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docs',
-          position: 'left',
+          to: '/docs/',
           label: 'Docs',
+          position: 'left',
         },
         {
-          href: 'https://github.com/TheAiCommunity',
+          to: '/docs/guides/first-task',
+          label: 'Guides',
+          position: 'left',
+        },
+        {
+          to: '/docs/developer/api-reference',
+          label: 'API reference',
+          position: 'left',
+        },
+        {
+          href: 'https://saas.theaicommunity.net/',
+          label: 'Product',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/TheAiCommunity/agent-saas-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -69,8 +83,33 @@ const config: Config = {
               to: '/docs/getting-started/quickstart',
             },
             {
+              label: 'Guides',
+              to: '/docs/guides/first-task',
+            },
+            {
+              label: 'Integrations',
+              to: '/docs/integrations/platforms',
+            },
+            {
+              label: 'FAQ',
+              to: '/docs/reference/faq',
+            },
+          ],
+        },
+        {
+          title: 'Developers',
+          items: [
+            {
+              label: 'Developer overview',
+              to: '/docs/developer/overview',
+            },
+            {
               label: 'API reference',
               to: '/docs/developer/api-reference',
+            },
+            {
+              label: 'Examples',
+              to: '/docs/developer/examples',
             },
           ],
         },
