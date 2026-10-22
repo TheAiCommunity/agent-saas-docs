@@ -5,7 +5,7 @@ Usage:
   python3 scripts/generate-api-reference.py path/to/frontend-swagger.json
       -> English page at docs/developer/api-reference.md
   python3 scripts/generate-api-reference.py path/to/frontend-swagger.json --zh
-      -> Chinese page at i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer/api-reference.md
+      -> Chinese page at i18n/zh/docusaurus-plugin-content-docs/current/developer/api-reference.md
 
 Source of truth: agent-saas-service repo, docs/frontend-swagger.json.
 English pages use the spec's summaries; the Chinese page uses the spec's
@@ -259,7 +259,7 @@ def main():
     text = "\n".join(out) + "\n"
     if chinese:
         target = os.path.join(
-            "i18n/zh-Hans/docusaurus-plugin-content-docs/current/developer/api-reference.md"
+            "i18n/zh/docusaurus-plugin-content-docs/current/developer/api-reference.md"
         )
     else:
         target = "docs/developer/api-reference.md"
@@ -267,7 +267,7 @@ def main():
     with open(target, "w") as f:
         f.write(text)
     groups_printed = ", ".join(f"{n}: {len(rows[n])}" for n in rows)
-    print(f"{'zh-Hans' if chinese else 'en'} -> {target}")
+    print(f"{'zh' if chinese else 'en'} -> {target}")
     print("groups:", groups_printed)
 
 
