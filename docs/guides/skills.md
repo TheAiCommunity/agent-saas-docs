@@ -3,7 +3,7 @@ title: Skills
 description: Installing writing skills and using them in tasks.
 ---
 
-Skills are reusable writing add-ons. A skill carries instructions — and possibly input fields — that shape how the content model writes: tone, structure, hooks, compliance rules, and so on.
+Skills are reusable writing add-ons. A skill carries instructions, and sometimes input fields, that shape how the content model writes: tone, structure, hooks, compliance rules, and so on.
 
 ## Getting skills
 

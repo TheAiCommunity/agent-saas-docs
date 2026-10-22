@@ -11,7 +11,7 @@ You can sign in with a username, an email address, or a phone number, plus your 
 
 ## First login
 
-If your account was created for you — for example by a tenant admin — the first sign-in asks you to set a new password before you can use the product. This is normal and happens once.
+If a tenant admin created your account, the first sign-in asks you to set a new password before you can use the product. This is normal and happens once.
 
 ## Sessions
 

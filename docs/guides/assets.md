@@ -16,7 +16,7 @@ Tasks get images in one of two modes:
 - a style description
 - up to six reference images from your library to steer the result
 
-**Library** — the task uses existing images from your asset library. You pick the image set per task; nothing is generated. Douyin tasks require library mode — generated images are not used for Douyin.
+**Library** — the task uses existing images from your asset library. You pick the image set per task; nothing is generated. Douyin tasks require library mode; generated images are not used for Douyin.
 
 WeChat official account posts need a cover: in library mode you either pass an authorization reference for the cover or the first library image is used; in generate mode the first generated image becomes the cover.
 
