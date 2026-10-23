@@ -51,6 +51,7 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 | `GET` | `/v1/platforms` | 列出平台能力 |
 | `DELETE` | `/v1/platforms/bilibili/accounts/{accountID}` | 本地断开 Bilibili 账号 |
 | `GET` | `/v1/platforms/douyin/h5-share-readiness` | 读取抖音 H5 分享就绪状态 |
+| `DELETE` | `/v1/platforms/twitter/accounts/{accountID}` | Disconnect an X account locally |
 | `GET` | `/v1/platforms/wechat/accounts` | 列出已配置的微信公众号 |
 | `POST` | `/v1/platforms/wechat/accounts` | 配置租户的微信公众号 |
 | `GET` | `/v1/platforms/wechat/accounts/{accountID}` | 获取脱敏的微信账号配置 |
@@ -191,12 +192,18 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 | --- | --- | --- |
 | `POST` | `/v1/bilibili/oauth/authorize` | 发起租户 Bilibili 官方 OAuth |
 | `GET` | `/v1/bilibili/oauth/callback` | 公开的浏览器侧 Bilibili OAuth 回调 |
-| `GET` | `/v1/douyin/h5/media/{token}/{filename}` | 读取一张短时效抖音 H5 分享图片 |
-| `HEAD` | `/v1/douyin/h5/media/{token}/{filename}` | 读取一张短时效抖音 H5 分享图片 |
+| `GET` | `/v1/douyin/h5/media/{token}/{filename}` | Read one short-lived Douyin H5 share image or video |
+| `HEAD` | `/v1/douyin/h5/media/{token}/{filename}` | Read one short-lived Douyin H5 share image or video |
 | `POST` | `/v1/douyin/oauth/authorize` | 发起租户抖音 OAuth |
 | `GET` | `/v1/douyin/oauth/callback` | 公开的浏览器侧抖音 OAuth 回调 |
 | `GET` | `/v1/integrations/gewe/media/{leaseID}/{secret}` | 读取带时效和能力保护的媒体对象 |
 | `POST` | `/v1/integrations/gewe/webhooks/{connectionID}/{secret}` | 保存经鉴权的 GeWe 事件，不自动回复 |
 | `POST` | `/v1/twitter/oauth/authorize` | 发起浏览器侧 X/Twitter OAuth |
 | `GET` | `/v1/twitter/oauth/callback` | 公开的浏览器侧 X/Twitter OAuth 回调 |
+
+## 其他接口
+
+| 方法 | 接口 | 说明 |
+| --- | --- | --- |
+| `GET` | `/healthz` | Content service liveness |
 

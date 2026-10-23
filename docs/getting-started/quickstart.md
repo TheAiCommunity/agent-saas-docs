@@ -5,6 +5,8 @@ description: The shortest path from sign-in to your first published post.
 
 This page walks through the shortest path to a published post. The product team will add screenshots and final wording; every fact below is checked against the current product.
 
+<!-- TODO: final copy from the product team: screenshots for each step and platform-specific notes. -->
+
 ## What you need
 
 - An account in a tenant. Sign-in needs the tenant code plus a username, email, or phone number.

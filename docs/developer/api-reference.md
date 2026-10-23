@@ -54,6 +54,7 @@ Authentication, error formats and conventions are described in
 | `GET` | `/v1/platforms` | List platform capabilities |
 | `DELETE` | `/v1/platforms/bilibili/accounts/{accountID}` | Disconnect a Bilibili account locally |
 | `GET` | `/v1/platforms/douyin/h5-share-readiness` | Read Douyin H5 sharing readiness |
+| `DELETE` | `/v1/platforms/twitter/accounts/{accountID}` | Disconnect an X account locally |
 | `GET` | `/v1/platforms/wechat/accounts` | List configured WeChat Official Accounts |
 | `POST` | `/v1/platforms/wechat/accounts` | Configure a tenant-owned WeChat Official Account |
 | `GET` | `/v1/platforms/wechat/accounts/{accountID}` | Get safe WeChat account configuration |
@@ -194,12 +195,18 @@ Authentication, error formats and conventions are described in
 | --- | --- | --- |
 | `POST` | `/v1/bilibili/oauth/authorize` | Start tenant Bilibili official OAuth |
 | `GET` | `/v1/bilibili/oauth/callback` | Public browser-bound Bilibili OAuth callback |
-| `GET` | `/v1/douyin/h5/media/{token}/{filename}` | Read one short-lived Douyin H5 share image |
-| `HEAD` | `/v1/douyin/h5/media/{token}/{filename}` | Read one short-lived Douyin H5 share image |
+| `GET` | `/v1/douyin/h5/media/{token}/{filename}` | Read one short-lived Douyin H5 share image or video |
+| `HEAD` | `/v1/douyin/h5/media/{token}/{filename}` | Read one short-lived Douyin H5 share image or video |
 | `POST` | `/v1/douyin/oauth/authorize` | Start tenant Douyin OAuth |
 | `GET` | `/v1/douyin/oauth/callback` | Public browser-bound Douyin OAuth callback |
 | `GET` | `/v1/integrations/gewe/media/{leaseID}/{secret}` | Read an expiring capability-protected media object |
 | `POST` | `/v1/integrations/gewe/webhooks/{connectionID}/{secret}` | Persist authenticated GeWe events without automatic replies |
 | `POST` | `/v1/twitter/oauth/authorize` | Start browser-bound X/Twitter OAuth |
 | `GET` | `/v1/twitter/oauth/callback` | Public browser-bound X/Twitter OAuth callback |
+
+## Other endpoints
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/healthz` | Content service liveness |
 

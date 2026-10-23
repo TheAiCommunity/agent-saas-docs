@@ -13,7 +13,7 @@ Agent SaaS is driven by a REST API. Everything the product does, from authentica
 | Tenant admin API | `/api/admin/v1/*` | The tenant management console | Tenant admin access token |
 | Platform admin API | `/api/platform/v1/*` | The platform operations console | Platform access token |
 
-The tenant admin and platform admin APIs serve Agent SaaS's own consoles; they are summarized in [Tenant admin API](/docs/developer/admin-api) and [Platform admin API](/docs/developer/admin-api). This guide focuses on the content API, which is the API for building on the product.
+The tenant admin and platform admin APIs serve Agent SaaS's own consoles; they are summarized in [Tenant admin API](/docs/developer/admin-api) and [Platform admin API](/docs/developer/platform-api). This guide focuses on the content API, which is the API for building on the product.
 
 ## Base URL
 
