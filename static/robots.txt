@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.theaicommunity.net/sitemap.xml
+Sitemap: https://docs.theaicommunity.net/zh/sitemap.xml

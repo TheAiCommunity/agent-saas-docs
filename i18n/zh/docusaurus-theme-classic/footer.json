@@ -44,7 +44,7 @@
     "description": "The label of footer link with label=Examples linking to /docs/developer/examples"
   },
   "link.item.label.Agent SaaS": {
-    "message": "Agent SaaS",
+    "message": "鲸芽 Agent",
     "description": "The label of footer link with label=Agent SaaS linking to https://saas.theaicommunity.net/"
   },
   "link.item.label.GitHub": {
