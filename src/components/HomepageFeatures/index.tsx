@@ -10,38 +10,40 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Content automation',
+    title: 'Workbench drafts',
     description: (
       <>
-        Scheduled tasks that generate articles and images from templates and
-        skills, then route them through review and publish without manual work.
+        Bring your own material, get a reviewable draft, and check facts
+        against what you provided. Reviews record a reason for every decision.
       </>
     ),
   },
   {
-    title: 'Multi-platform publishing',
+    title: 'Office documents',
     description: (
       <>
-        Connect accounts on Xiaohongshu, WeChat, Douyin, Bilibili and Twitter,
-        and deliver content to each platform from a single workflow.
+        Generate and download Word files from your drafts. Every file creation
+        goes through a confirmation card before it runs.
       </>
     ),
   },
   {
-    title: 'Skills system',
+    title: '17 writing skills',
     description: (
       <>
-        Install writing skills from the skill market and attach up to ten of
-        them to a task to shape how content is produced.
+        Reusable methods with traceable open-source sources, pinned versions
+        and license notes. Up to 3 per workbench round, 10 per automation
+        task.
       </>
     ),
   },
   {
-    title: 'Developer API',
+    title: '19 plugins',
     description: (
       <>
-        A REST API for everything the product does: authentication, tasks,
-        reviews, publishing and assets, with OpenAPI specifications available.
+        Office export, web reading and search, content platforms and
+        enterprise apps. Connect your accounts, then check each account's
+        available actions before relying on them.
       </>
     ),
   },
@@ -63,7 +65,7 @@ export default function HomepageFeatures(): ReactNode {
     <section className={clsx('section', styles.features)}>
       <div className="container">
         <Heading as="h2" className="text--center">
-          Key features
+          What you can do
         </Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
