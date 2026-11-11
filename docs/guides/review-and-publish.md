@@ -1,26 +1,48 @@
 ---
 title: Review and publish
-description: What happens between a generated draft and a published post.
+description: Confirm the content, the delivery path and the final platform result separately.
 ---
 
-## The path of a draft
+A content draft, an approved review, a platform draft box and an actual publication are different outcomes. Check the matching status at every step.
 
-1. The task generates a draft and its images.
-2. The draft enters review — unless the task is allowed to publish automatically.
-3. A reviewer approves, requests changes, or rejects the draft.
-4. Approved drafts are published to the connected account.
-5. The platform collects publication status, metrics, and comments back into the task's reports.
+## Review a draft
 
-## When review is required
+1. Open "content preview" in the task detail.
+2. Check the title, body, images or videos, sources and items to confirm.
+3. Read the recorded review reason; make changes with the actions the page offers.
+4. Before approving, verify the target account and delivery path. If the confirmation card will perform a publish, confirm its scope before continuing.
 
-By default every draft waits for review before publishing; a task only publishes on its own when `auto_publish` is enabled. Some situations force a review regardless:
 
-- WeChat mass send always requires manual approval.
-- Content that hits banned words, misses required disclosures, contains links to non-allowed domains, or exceeds length limits is flagged for review.
-- Publishers can also re-route a publication for review when something looks wrong after the fact.
+![Content pending review with the recorded review reason](/img/tutorials/20261023/25-review-history.png)
 
-## After publishing
+*2026-10-17 isolated review test screenshot: illustrates review categories and reasons only; no model or publishing service was connected.*
 
-Publications are tracked per post: status, metrics (views, likes, and so on), and comments. Metrics and comments are collected on demand or automatically, and feed the task's reports. If a publication failed (for example, the platform rejected the post), you can retry it from the task view.
 
-<!-- TODO: final copy from the product team: review UI walkthrough, approval workflows for teams, and examples of flagged content. -->
+## Read the statuses correctly
+
+| What the page shows | What it proves |
+| --- | --- |
+| Draft generated | Content is ready and still needs checking |
+| Approved | This version passed content review; delivery still needs permissions and platform conditions |
+| Saved as platform draft | The platform draft box has the content; it is not a verified publication |
+| Share or submission QR prepared | You still complete the confirmation in the platform flow; a prepared QR is not a published work |
+| Result pending confirmation | The remote outcome is unverified; query the result first instead of submitting again |
+| Publish succeeded | Backed by the platform's confirmation result and a checkable receipt or work |
+
+For official accounts using draft delivery, review saves to the WeChat draft box and the account admin publishes manually in the WeChat backend. The workbench does not count a manual publication as a verified publish success.
+
+## Check account capabilities again before publishing
+
+Open the matching plugin, click "re-check account/capabilities" and read "available actions and authorization status". A connected account only means the identity link is done; draft preparation, share paths and server-side publishing are judged separately.
+
+
+![Platform actions shown as not callable yet](/img/tutorials/20261023/21-operation-blockers.png)
+
+*2026-10-23 local check: tool registration and per-action availability display separately; the screenshot is not proof of any publication.*
+
+
+## On failures or unknown results
+
+Check the task's "run records" and "publish status"; fix clear account, permission or asset problems first. When the result is unknown, verify the platform work and receipt before anything else; retry only after confirming failure and only if the page allows it. External reports should use what the page actually says, like "draft saved" or "waiting for platform confirmation".
+
+The 2026-10-23 screenshots in this material come from a local acceptance environment with publishing disabled; they do not prove real social publishing has happened.

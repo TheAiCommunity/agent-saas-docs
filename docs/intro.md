@@ -1,48 +1,51 @@
 ---
 slug: /
-title: Agent SaaS documentation
-description: What Agent SaaS is, where to start, and where to find every guide and API reference.
+title: Jingya Agent user guide
+description: From organizing your material to reviewable content, connecting tools and platforms as you need them.
 hide_table_of_contents: true
 ---
 
-Agent SaaS is an AI content production and social media automation platform: it generates articles and images from your templates and skills, routes them through review, and publishes them to your connected social accounts on a schedule.
+Jingya Agent brings writing methods, office tools and content platforms into a single workspace. You can provide materials first and get a reviewable draft in the workbench; generate and download files when you need them; and connect the matching plugins and accounts when you need external research or social delivery.
 
-<p>
-  <a className="button button--primary button--lg margin-right--md" href="/docs/getting-started/quickstart">Get started</a>
-  <a className="button button--secondary button--lg" href="/docs/developer/api-reference">API reference</a>
-</p>
+## Start here
 
-## Quick links
+1. Read the [Quickstart](/docs/getting-started/quickstart) and finish one text-organizing pass.
+2. Install the methods that fit your work in [Skills](/docs/skills/), and pick the tools you need in [Plugins](/docs/integrations/mcp).
+3. When you need continuous content production, see [Create your first task](/docs/guides/first-task) and [Automation runs](/docs/guides/automation).
 
-### Using the product
 
-- [Quickstart](/docs/getting-started/quickstart) — from sign-in to a published post
-- [Accounts and sign-in](/docs/getting-started/accounts) — tenants, passwords, sessions
-- [Create your first task](/docs/guides/first-task) — the parts of an automation task
-- [Skills](/docs/skills/) — installing and using writing skills
-- [Assets and images](/docs/guides/assets) — generated images vs. your library
-- [Review and publish](/docs/guides/review-and-publish) — from draft to published post
-- [Social platform connections](/docs/integrations/platforms) — Xiaohongshu, WeChat, Douyin, Bilibili, Twitter
+![Plugin capability library](/img/tutorials/20261023/01-plugin-library.png)
 
-### Building on the API
+*2026-10-23 local product interface: office, research and platform capabilities in the plugin library.*
 
-- [Developer overview](/docs/developer/overview) — the three API sets and how to get access
-- [Authentication](/docs/developer/authentication) — sign in, tokens, refresh
-- [API conventions](/docs/developer/conventions) — envelope, errors, headers
-- [Content API reference](/docs/developer/api-reference) — every endpoint
-- [Examples](/docs/developer/examples) — end-to-end curl scripts
 
-### Reference
+## Four things to tell apart
 
-- [FAQ](/docs/reference/faq)
-- [Glossary](/docs/reference/glossary)
-- [Changelog](/docs/reference/changelog)
+| Entry | What it provides | What is still needed afterwards |
+| --- | --- | --- |
+| Skills | Methods for writing, research, and visual or video planning | Select them per conversation round; tool access is controlled separately |
+| Plugins | Office export, web reading, or operations on external systems | Install, enable, and configure as prompted |
+| Company integrations | Company admins maintain developer apps and service configs | Employees connect their own accounts or confirm app scopes as needed |
+| Platform accounts | Choose the content accounts you actually use | Check draft, share and publish capabilities per action |
 
-## Key features
+## Current capability scope
 
-- **Content automation** — scheduled tasks that generate and publish without manual work
-- **Multi-platform publishing** — Xiaohongshu, WeChat official accounts, Douyin, Bilibili, Twitter
-- **Skills system** — installable writing skills, up to ten per task
-- **Developer API** — a REST API for everything the product does, with interactive Swagger documentation
+As of 2026-10-23, the backend public catalog lists **19 plugins and 17 skills**. There is real interface evidence of text model output and of Word file confirmation and download. Enterprise app connectors exist, but real vendor authorization is still pending; whether social delivery works should be judged by the specific account's action checks and the final platform receipt.
 
-The product lives at [saas.theaicommunity.net](https://saas.theaicommunity.net/); the landing page with more background is [theaicommunity.net/agent](https://theaicommunity.net/agent).
+Visual and video skills currently output plans, storyboards or generation prompts. Getting a prompt does not mean you have an image or video file.
+
+
+![Skills capability catalog](/img/tutorials/20261023/11-skills-library.png)
+
+*2026-10-23 local product interface: catalog methods show their source and pinned version.*
+
+
+## Common guides
+
+- [Accounts and sign-in](/docs/getting-started/accounts): get into the right workspace.
+- [Assets, images and files](/docs/guides/assets): manage reusable material and download office files.
+- [Review and publish](/docs/guides/review-and-publish): tell drafts, review, delivery and publish results apart.
+- [Platform connections](/docs/integrations/platforms): prepare authorization per platform.
+- [Developer overview](/docs/developer/overview) and [API reference](/docs/developer/api-reference): for developers building on the product.
+
+Product entrance: [Jingya Agent](https://saas.theaicommunity.net/).
