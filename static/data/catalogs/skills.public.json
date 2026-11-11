@@ -1,0 +1,551 @@
+{
+  "as_of": "2026-10-23",
+  "count": 17,
+  "scope": "公共产品目录；来源元数据按本地后端固定目录导出",
+  "items": [
+    {
+      "code": "jingya.studio.translation",
+      "name": "双语精译",
+      "category": "翻译与写作",
+      "method_category": "writing",
+      "summary": "忠实翻译、统一术语，让好内容跨越语言。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "忠实翻译、统一术语，让好内容跨越语言。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "请将这篇600词英文产品文章译成面向中国运营人员的中文；Agent译为智能体，保留链接与所有数字。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-translate/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-translate/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "upstream_version": "1.117.3",
+      "adaptation_note": "鲸芽中文方法适配：交付译文；不自动抓取任意URL、不翻译图片内文字、不保证无限长文或出版审校质量。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.studio.infographic",
+      "name": "信息图创意工坊",
+      "category": "视觉策划",
+      "method_category": "visual",
+      "summary": "把复杂资料变成清晰版式、图上文字与生图提示。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "把复杂资料变成清晰版式、图上文字与生图提示。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出策划、文字结构或提示；不代表已生成图片、漫画或视频文件",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "把这份含5个准确数字的季度报告变成1张16:9信息图方案；手绘风，保留数字和来源。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-infographic/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-infographic/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "upstream_version": "1.117.4",
+      "adaptation_note": "鲸芽中文方法适配：当前只交付信息图方案和提示；成图需要另行接入并授权的图像工具。不能把提示文本称为已生成PNG。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.studio.knowledge-comic",
+      "name": "知识漫画编剧",
+      "category": "视觉策划",
+      "method_category": "visual",
+      "summary": "用原创角色和四格故事，把知识讲得有画面。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "用原创角色和四格故事，把知识讲得有画面。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出策划、文字结构或提示；不代表已生成图片、漫画或视频文件",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "用4格漫画解释为什么同步文件不等于备份，角色为原创小鲸和文件盒，不引用真人或现有动漫形象。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-comic/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/JimLiu/baoyu-skills/blob/1567581c26ec29f4216c6e6835415bf30343b0e3/skills/baoyu-comic/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "1567581c26ec29f4216c6e6835415bf30343b0e3",
+      "upstream_version": "1.117.4",
+      "adaptation_note": "鲸芽中文方法适配：交付漫画分格方案与提示；不会生成漫画图片或合并PDF。角色一致性是设计约束，不能保证模型成图一致。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.studio.video-director",
+      "name": "视频提示导演",
+      "category": "视频创意",
+      "method_category": "video",
+      "summary": "把创意写成镜头、动作与光线明确的视频生成提示。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "把创意写成镜头、动作与光线明确的视频生成提示。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出策划、文字结构或提示；不代表已生成图片、漫画或视频文件",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "视频提示导演已有一轮真实文字模型结果；未生成视频文件",
+      "example_prompt": "为原创鲸鱼吉祥物写8秒竖屏产品片提示：从纸盒探头、看到光点、轻触后产品名出现；不要配人声。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/Emily2040/seedance-2.0/blob/4668457e560eee06e95d7fcfdf441c8c0bba802e/skills/seedance-prompt-short/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/Emily2040/seedance-2.0/blob/4668457e560eee06e95d7fcfdf441c8c0bba802e/skills/seedance-prompt-short/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "4668457e560eee06e95d7fcfdf441c8c0bba802e",
+      "upstream_version": "6.7.0",
+      "adaptation_note": "鲸芽中文方法适配：只生成可复制到视频服务的提示和制作说明；不提交任务、不生成MP4、不承诺某服务时长/模式/配音可用。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.studio.product-positioning",
+      "name": "产品叙事工作室",
+      "category": "品牌与增长",
+      "method_category": "growth",
+      "summary": "找准目标用户、差异和证据，写出产品定位底稿。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "找准目标用户、差异和证据，写出产品定位底稿。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "这是产品说明、3段客户原话和功能限制；请为10人运营团队整理定位和一页发布叙事。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/product-marketing/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/product-marketing/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.2.0",
+      "adaptation_note": "鲸芽中文方法适配：基于用户材料形成定位候选，不代表客户研究已完成、不会自动保存为全公司记忆或跨会话共享。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.studio.competitor-evidence",
+      "name": "竞品研究员",
+      "category": "研究分析",
+      "method_category": "research",
+      "summary": "用可核验的证据比较产品，形成公平、清楚的比较稿。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "用可核验的证据比较产品，形成公平、清楚的比较稿。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "这是A/B两款产品的官方说明与定价摘录，请核查我们现有对比稿里的12个主张，标出过度断言。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/competitors/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/competitors/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.3.0",
+      "adaptation_note": "鲸芽中文方法适配：无网页授权时仅分析用户提供的资料，未查到不等于没有；不提供实时市场情报或已经验证的采购推荐。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.studio.creative-lab",
+      "name": "传播创意实验室",
+      "category": "品牌与增长",
+      "method_category": "growth",
+      "summary": "从真实用户反馈提炼传播角度、文案与实验方案。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "从真实用户反馈提炼传播角度、文案与实验方案。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "基于这10条真实用户反馈和3条已有广告，为新品设计3种传播角度，每种2条文案和一个视觉方案。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/ad-creative/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/ad-creative/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.12.1",
+      "adaptation_note": "鲸芽中文方法适配：交付创意草案与实验设计；不读取广告后台、不生成图片视频、不上传广告、不承诺点击或转化提升。 原版的脚本、外部工具和自动文件操作未随本方法安装，不代表原作者官方出品或背书。"
+    },
+    {
+      "code": "jingya.content.brand-voice",
+      "name": "品牌语气手册",
+      "category": "内容运营",
+      "method_category": "编辑与表达",
+      "summary": "从真实示例提炼可复用的品牌表达规则。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "从真实示例提炼可复用的品牌表达规则。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "这是我们喜欢的三段文案，请整理品牌语气手册，再把这段产品介绍改成同一声音。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copy-editing/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copy-editing/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.2.0",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.operations-review",
+      "name": "内容运营复盘",
+      "category": "内容运营",
+      "method_category": "素材与复盘",
+      "summary": "用用户数据核对指标，形成有依据的改进建议。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "用用户数据核对指标，形成有依据的改进建议。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "这是本月内容数据，请核对阅读到咨询转化率，指出三项可信发现，并设计下个月的实验。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/analytics/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/analytics/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.2.1",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.xiaohongshu-adaptation",
+      "name": "小红书内容适配",
+      "category": "内容运营",
+      "method_category": "平台与创作",
+      "summary": "把现有素材改成自然笔记与图文结构。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "把现有素材改成自然笔记与图文结构。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "把这段真实使用记录改成小红书图文笔记，给标题、正文和5页图文页纲，不要编造体验。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/social/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/social/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.4.0",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.material-organization",
+      "name": "素材整理与引用",
+      "category": "内容运营",
+      "method_category": "素材与复盘",
+      "summary": "整理散落素材，区分事实、观点、重复与待核实内容。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "整理散落素材，区分事实、观点、重复与待核实内容。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "素材整理与引用已有一轮真实文字模型结果",
+      "example_prompt": "请把下面8条访谈摘录与链接整理成素材索引，合并重复观点、保留原来源，并列出待核实事项。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/content-strategy/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/content-strategy/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.1.4",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.headlines-summary",
+      "name": "标题与摘要",
+      "category": "内容运营",
+      "method_category": "编辑与表达",
+      "summary": "生成有区分的标题、导语与摘要，避免夸大事实。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "生成有区分的标题、导语与摘要，避免夸大事实。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "基于这篇文章写6个不同方向的标题、公众号导语和一句话摘要，不要标题党。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copywriting/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copywriting/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.3.1",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.copy-editing",
+      "name": "内容精修",
+      "category": "内容运营",
+      "method_category": "编辑与表达",
+      "summary": "保留原意与作者声音，给出成稿和关键修改理由。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "保留原意与作者声音，给出成稿和关键修改理由。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "内容精修已有一轮真实文字模型结果",
+      "example_prompt": "请精修下面这段文案，保留轻松语气，不添加产品功能，并说明三处关键修改。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copy-editing/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copy-editing/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.2.0",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.short-video-script",
+      "name": "短视频分镜脚本",
+      "category": "内容运营",
+      "method_category": "平台与创作",
+      "summary": "把一个观点写成可拍摄的口播、画面与字幕。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "把一个观点写成可拍摄的口播、画面与字幕。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出策划、文字结构或提示；不代表已生成图片、漫画或视频文件",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "把这个效率技巧做成60秒口播脚本，只有手机和屏幕录制，请给分镜、字幕和拍摄清单。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/social/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/social/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.4.0",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.topic-research",
+      "name": "选题研究规划",
+      "category": "内容运营",
+      "method_category": "选题与策略",
+      "summary": "围绕受众问题，产出有依据的选题与优先级。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "围绕受众问题，产出有依据的选题与优先级。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "我们做面向小团队的效率工具，受众是运营负责人。请基于这些产品要点给我规划下周5个选题，并列出需要补充的证据。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/content-strategy/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/content-strategy/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.1.4",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.editorial-calendar",
+      "name": "内容日历",
+      "category": "内容运营",
+      "method_category": "选题与策略",
+      "summary": "按内容支柱、渠道和资源安排可执行的排期。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "按内容支柱、渠道和资源安排可执行的排期。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "我们两个人每周只能制作三篇新内容，请把这些选题安排成两周公众号与小红书内容日历。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/content-strategy/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/content-strategy/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.1.4",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    },
+    {
+      "code": "jingya.content.wechat-article",
+      "name": "公众号长文",
+      "category": "内容运营",
+      "method_category": "平台与创作",
+      "summary": "把真实材料组织成完整长文，保留论据和来源。",
+      "version": "1.0.0",
+      "skill_type": "prompt",
+      "runtime": "builtin",
+      "supported_actions": [
+        "把真实材料组织成完整长文，保留论据和来源。"
+      ],
+      "installation_prerequisites": "鲸芽账号具有目录浏览和安装权限；免费自用安装后在当前工作台选择",
+      "connection_prerequisites": "文字方法不需独立平台账号；实时资料、工具调用与发布需各自插件及授权",
+      "workbench_selection_limit": 3,
+      "automation_task_selection_limit": 10,
+      "delivery_boundary": "输出可审阅文字；不自动读取账号、发送或发布",
+      "implementation_status": "已集成固定版本 prompt 方法",
+      "verification_note": "已有集成与执行机制，未逐项验收真实模型输出质量",
+      "example_prompt": "把这份访谈素材整理成一篇面向运营新人的公众号长文，1000字左右，保留引述与来源。",
+      "official_guide_links": [
+        {
+          "label": "方法来源（上游固定版本）",
+          "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copywriting/SKILL.md"
+        }
+      ],
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/copywriting/SKILL.md",
+      "source_license": "MIT",
+      "source_version": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "upstream_version": "2.3.1",
+      "adaptation_note": "鲸芽中文适配：保留原方法框架，改为对话输入与当前已授权工具；移除本地脚本、开发者文件及未接入服务依赖。发布、账号读取与发送权限独立控制。"
+    }
+  ]
+}

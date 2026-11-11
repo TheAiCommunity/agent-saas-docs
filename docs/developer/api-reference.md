@@ -24,12 +24,14 @@ Authentication, error formats and conventions are described in
 | `GET` | `/v1/auth/me` | Current tenant member |
 | `GET` | `/v1/auth/permissions` | Current tenant permissions |
 | `POST` | `/v1/auth/refresh` | Rotate tenant tokens |
+| `POST` | `/v1/auth/wallet/challenge` | Prepare EVM wallet login |
+| `POST` | `/v1/auth/wallet/login` | Log in or register with an EVM wallet |
 
 ## Templates and content models
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| `GET` | `/v1/content-models` | List configured text models for content tasks |
+| `GET` | `/v1/content-models` | List current tenant production models |
 | `GET` | `/v1/templates` | 查询当前租户可用内容模板 |
 | `GET` | `/v1/templates/{template_id}` | 查看当前租户可用模板详情 |
 
@@ -74,6 +76,7 @@ Authentication, error formats and conventions are described in
 | `GET` | `/v1/platforms/{platform}/capabilities` | Get platform capability |
 | `GET` | `/v1/platforms/{platform}/connection-readiness` | Inspect official platform connection readiness |
 | `GET` | `/v1/social-accounts` | List social accounts |
+| `DELETE` | `/v1/social-accounts/{accountID}` | Remove a platform account connection and stop future work |
 | `GET` | `/v1/social-accounts/{accountID}/profile` | Read account workbench name and code |
 | `PUT` | `/v1/social-accounts/{accountID}/profile` | Update account workbench name and code without changing login identity |
 
@@ -106,6 +109,10 @@ Authentication, error formats and conventions are described in
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
+| `GET` | `/v1/analytics/publication-reports` | List recent publication reports |
+| `GET` | `/v1/analytics/weekly-reports` | List weekly publication analytics |
+| `GET` | `/v1/analytics/weekly-reports/{report_id}/items` | List immutable publication snapshots in a weekly report |
+| `POST` | `/v1/analytics/weekly-reports/{report_id}/refresh` | Refresh a weekly publication report |
 | `GET` | `/v1/automation-dashboard/summary` | Get content automation dashboard |
 | `GET` | `/v1/automation-runs` | List latest 200 automation runs |
 | `GET` | `/v1/automation-runs/search` | Search tenant automation runs |
@@ -119,6 +126,7 @@ Authentication, error formats and conventions are described in
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
+| `GET` | `/v1/asset-streams/{token}` | 播放视频素材（签名地址） |
 | `GET` | `/v1/assets` | List tenant media assets |
 | `POST` | `/v1/assets` | Upload a tenant media asset |
 | `GET` | `/v1/assets/groups` | List tenant asset groups |
@@ -127,11 +135,13 @@ Authentication, error formats and conventions are described in
 | `DELETE` | `/v1/assets/groups/{groupID}` | Remove a group and move its media to ungrouped |
 | `GET` | `/v1/assets/search` | Search tenant media assets |
 | `POST` | `/v1/assets/search` | Search media assets with JSON filters |
+| `GET` | `/v1/assets/{assetID}/poster` | 获取视频素材缩略图 |
 | `GET` | `/v1/assets/{asset_id}` | Read tenant asset metadata |
 | `PUT` | `/v1/assets/{asset_id}` | Edit tenant media metadata |
 | `DELETE` | `/v1/assets/{asset_id}` | Move a tenant asset to the recycle bin |
 | `GET` | `/v1/assets/{asset_id}/content` | Download authenticated tenant asset bytes |
 | `POST` | `/v1/assets/{asset_id}/restore` | Restore a recycled tenant asset |
+| `GET` | `/v1/assets/{asset_id}/stream-url` | 获取视频素材的短期播放地址 |
 
 ## Drafts, reviews and publications
 
@@ -168,6 +178,7 @@ Authentication, error formats and conventions are described in
 | `GET` | `/v1/wechat-personal/accounts/{accountID}` | Get a tenant-owned personal WeChat account |
 | `GET` | `/v1/wechat-personal/accounts/{accountID}/actions` | List manual actions and outcomes |
 | `POST` | `/v1/wechat-personal/accounts/{accountID}/actions` | Queue one manual message or publication |
+| `PUT` | `/v1/wechat-personal/accounts/{accountID}/binding` | Change the GeWe node for the same personal WeChat identity |
 | `GET` | `/v1/wechat-personal/accounts/{accountID}/capabilities` | Read channel readiness |
 | `POST` | `/v1/wechat-personal/accounts/{accountID}/check` | Check the actual GeWe online state |
 | `GET` | `/v1/wechat-personal/accounts/{accountID}/contacts` | Read the GeWe contact and saved-group directory |

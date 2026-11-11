@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Agent SaaS Docs',
   tagline: 'User guides and API documentation for Agent SaaS',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/brand/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://docs.theaicommunity.net',
@@ -56,10 +56,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Agent SaaS',
+      title: '鲸芽',
       logo: {
-        alt: 'Agent SaaS logo',
-        src: 'img/logo.svg',
+        alt: '鲸芽',
+        src: 'img/brand/jingya-mark.svg',
       },
       items: [
         {

@@ -1,48 +1,50 @@
 ---
 slug: /
-title: 鲸芽 Agent 文档
-description: 鲸芽 Agent 是什么、从哪里开始，以及所有指南和 API 参考的入口。
-hide_table_of_contents: true
+title: 鲸芽 Agent 使用指南
+description: 从整理素材到可审阅内容，按需连接工具和平台。
 ---
 
-鲸芽 Agent 是一个 AI 内容生产与社媒自动化平台：它根据你的模板和技能生成文章与配图，经过审核后按计划发布到你连接的社媒账号。
+鲸芽 Agent 把写作方法、办公工具和内容平台放进同一个工作空间。你可以先提供材料，在工作台得到可审阅的草稿；需要文件时生成并下载，需要外部资料或社媒交付时，再连接对应插件与账号。
 
-<p>
-  <a className="button button--primary button--lg margin-right--md" href="/zh/docs/getting-started/quickstart">快速开始</a>
-  <a className="button button--secondary button--lg" href="/zh/docs/developer/api-reference">API 参考</a>
-</p>
+## 从这里开始
 
-## 快速入口
+1. 阅读[快速上手](getting-started/quickstart.md)，完成一次文字整理。
+2. 在 [Skills](skills/index.md) 安装合适的方法，在[插件](integrations/mcp.md)选择需要的工具。
+3. 需要连续生产内容时，查看[创建第一个任务](guides/first-task.md)和[自动化运行](guides/automation.md)。
 
-### 使用产品
 
-- [快速上手](getting-started/quickstart.md) — 从登录到发出第一篇内容
-- [账号与登录](getting-started/accounts.md) — 租户、密码、会话
-- [创建第一个任务](guides/first-task.md) — 自动化任务的组成部分
-- [技能](skills/index.md) — 安装和使用写作技能
-- [素材与配图](guides/assets.md) — 自动生成图与素材库
-- [审核与发布](guides/review-and-publish.md) — 从草稿到发布
-- [社媒平台连接](integrations/platforms.md) — 小红书、微信、抖音、B站、X
+![插件能力库](/img/tutorials/20261023/01-plugin-library.png)
 
-### 基于 API 开发
+*2026-10-23 本地产品界面：从插件能力库查看办公、资料与平台能力。*
 
-- [开发者概览](developer/overview.md) — 三套 API 与接入方式
-- [认证](developer/authentication.md) — 登录、令牌、刷新
-- [API 约定](developer/conventions.md) — 响应格式、错误、请求头
-- [内容 API 参考](developer/api-reference.md) — 全部接口
-- [示例](developer/examples.md) — 端到端 curl 脚本
 
-### 参考
+## 先分清四件事
 
-- [常见问题](reference/faq.md)
-- [术语表](reference/glossary.md)
-- [更新日志](reference/changelog.md)
+| 入口 | 作用 | 完成后还需要什么 |
+| --- | --- | --- |
+| Skills | 提供写作、研究、视觉和视频策划方法 | 在本轮对话选择；工具权限独立控制 |
+| 插件 | 提供办公导出、网页阅读或外部系统操作 | 安装、启用，并按提示配置 |
+| 公司集成 | 公司管理员维护开发者应用和服务配置 | 员工按需连接自己的账号或确认应用范围 |
+| 平台账号 | 选择实际使用的内容账号 | 逐项检查草稿、分享、发布能力 |
 
-## 核心能力
+## 当前能力范围
 
-- **内容自动化** — 定时任务自动生成并发布，无需人工干预
-- **多平台发布** — 小红书、微信公众号、抖音、B站、X
-- **技能体系** — 可安装的写作技能，每个任务最多挂载十个
-- **开发者 API** — 覆盖产品全部能力的 REST API，附带在线 Swagger 文档
+截至 2026-10-23，后端公共目录为 **19 个插件、17 项 Skills**。已有真实文字模型输出、Word 文件确认和下载的界面证据。企业应用连接器有实现，但厂商实际授权仍待完成；社媒是否可交付，应以所选账号的具体操作检查及最终平台回执为准。
 
-产品入口在 [saas.theaicommunity.net](https://saas.theaicommunity.net/)；产品介绍页见 [theaicommunity.net/agent](https://theaicommunity.net/agent)。
+视觉和视频 Skills 当前输出策划、分镜或生成提示。拿到提示不表示已经得到图片或视频文件。
+
+
+![Skills 能力目录](/img/tutorials/20261023/11-skills-library.png)
+
+*2026-10-23 本地产品界面：目录中的方法可查看来源和固定版本。*
+
+
+## 常用指南
+
+- [账号与登录](getting-started/accounts.md)：进入正确的工作空间。
+- [素材、图片与文件](guides/assets.md)：管理可复用素材，下载办公文件。
+- [审核与发布](guides/review-and-publish.md)：区分草稿、审核、交付和发布结果。
+- [平台连接](integrations/platforms.md)：按平台准备授权。
+- [开发者概览](developer/overview.md)与 [API 参考](developer/api-reference.md)：供开发者接入。
+
+产品入口：[鲸芽 Agent](https://saas.theaicommunity.net/)。

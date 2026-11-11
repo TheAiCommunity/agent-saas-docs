@@ -23,9 +23,9 @@ GROUPS = OrderedDict([
     ("Social accounts and platform connections", ["social-accounts", "platforms"]),
     ("Automation tasks", ["automation-tasks", "automation-capabilities"]),
     ("Runs, reports and recommendations", [
-        "automation-runs", "automation-dashboard", "reports", "recommendations", "operations",
+        "automation-runs", "automation-dashboard", "reports", "recommendations", "operations", "analytics",
     ]),
-    ("Assets", ["assets"]),
+    ("Assets", ["assets", "asset-streams"]),
     ("Drafts, reviews and publications", ["content-drafts", "content-reviews", "publications"]),
     ("Personal WeChat workspace", ["wechat-personal"]),
     ("OAuth and callbacks", ["douyin", "bilibili", "twitter", "integrations"]),
@@ -238,12 +238,22 @@ def main():
             if chinese:
                 desc = SUMMARY_ZH.get(op.get("summary") or "")
                 if not desc:
-                    raw = (op.get("description") or "").splitlines()[0]
+                    lines = (op.get("description") or "").splitlines()
+                    raw = lines[0].strip() if lines else ""
                     desc = raw if any("\u4e00" <= c <= "\u9fff" for c in raw) else (op.get("summary") or raw)
             else:
-                desc = op.get("summary") or (op.get("description") or "").splitlines()[0]
+                lines = (op.get("description") or "").splitlines()
+                desc = op.get("summary") or (lines[0].strip() if lines else "")
             rows.setdefault(group_for(path), []).append(
-                (method.upper(), path, desc.replace("|", "\\|"))
+                (
+                    method.upper(),
+                    path,
+                    desc.replace("|", "\\|")
+                        .replace("<", "&lt;")
+                        .replace(">", "&gt;")
+                        .replace("{", "&#123;")
+                        .replace("}", "&#125;"),
+                )
             )
     out = [ZH_INTRO if chinese else EN_INTRO]
     for name in list(GROUPS) + ["Other endpoints"]:

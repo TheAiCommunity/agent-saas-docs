@@ -21,12 +21,14 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 | `GET` | `/v1/auth/me` | 当前租户成员 |
 | `GET` | `/v1/auth/permissions` | 当前租户权限 |
 | `POST` | `/v1/auth/refresh` | 轮换租户令牌 |
+| `POST` | `/v1/auth/wallet/challenge` | Prepare EVM wallet login |
+| `POST` | `/v1/auth/wallet/login` | Log in or register with an EVM wallet |
 
 ## 模板与文案模型
 
 | 方法 | 接口 | 说明 |
 | --- | --- | --- |
-| `GET` | `/v1/content-models` | 列出内容任务可用的文案模型 |
+| `GET` | `/v1/content-models` | List current tenant production models |
 | `GET` | `/v1/templates` | 查询当前租户可用内容模板 |
 | `GET` | `/v1/templates/{template_id}` | 查看当前租户可用模板详情 |
 
@@ -71,6 +73,7 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 | `GET` | `/v1/platforms/{platform}/capabilities` | 获取平台能力 |
 | `GET` | `/v1/platforms/{platform}/connection-readiness` | 检查官方平台连接就绪状态 |
 | `GET` | `/v1/social-accounts` | 列出社媒账号 |
+| `DELETE` | `/v1/social-accounts/{accountID}` | Remove a platform account connection and stop future work |
 | `GET` | `/v1/social-accounts/{accountID}/profile` | 读取账号工作台名称与编码 |
 | `PUT` | `/v1/social-accounts/{accountID}/profile` | 更新账号工作台名称与编码，不改变登录身份 |
 
@@ -103,6 +106,10 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 
 | 方法 | 接口 | 说明 |
 | --- | --- | --- |
+| `GET` | `/v1/analytics/publication-reports` | List recent publication reports |
+| `GET` | `/v1/analytics/weekly-reports` | List weekly publication analytics |
+| `GET` | `/v1/analytics/weekly-reports/{report_id}/items` | List immutable publication snapshots in a weekly report |
+| `POST` | `/v1/analytics/weekly-reports/{report_id}/refresh` | Refresh a weekly publication report |
 | `GET` | `/v1/automation-dashboard/summary` | 获取内容自动化仪表盘 |
 | `GET` | `/v1/automation-runs` | 列出最近 200 条自动化运行 |
 | `GET` | `/v1/automation-runs/search` | 检索租户自动化运行 |
@@ -116,6 +123,7 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 
 | 方法 | 接口 | 说明 |
 | --- | --- | --- |
+| `GET` | `/v1/asset-streams/{token}` | 由 /v1/assets/&#123;asset_id&#125;/stream-url 返回的地址，无需登录头；支持 Range 分段读取。令牌无效、过期或素材不可播放时一律返回 404。 |
 | `GET` | `/v1/assets` | 列出租户媒体素材 |
 | `POST` | `/v1/assets` | 上传租户媒体素材 |
 | `GET` | `/v1/assets/groups` | 列出租户素材分组 |
@@ -124,11 +132,13 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 | `DELETE` | `/v1/assets/groups/{groupID}` | 删除分组，其媒体归入未分组 |
 | `GET` | `/v1/assets/search` | 检索租户媒体素材 |
 | `POST` | `/v1/assets/search` | 用 JSON 条件检索媒体素材 |
+| `GET` | `/v1/assets/{assetID}/poster` | 获取视频素材缩略图 |
 | `GET` | `/v1/assets/{asset_id}` | 读取租户素材元数据 |
 | `PUT` | `/v1/assets/{asset_id}` | 编辑租户媒体元数据 |
 | `DELETE` | `/v1/assets/{asset_id}` | 将租户素材移入回收站 |
 | `GET` | `/v1/assets/{asset_id}/content` | 下载经鉴权的租户素材内容 |
 | `POST` | `/v1/assets/{asset_id}/restore` | 恢复回收站中的租户素材 |
+| `GET` | `/v1/assets/{asset_id}/stream-url` | 返回 30 分钟内有效的签名地址，浏览器可直接用于 &lt;video src&gt; 并按 Range 分段读取。只支持视频和音频素材。 |
 
 ## 草稿、审核与发布
 
@@ -165,6 +175,7 @@ description: 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 Ope
 | `GET` | `/v1/wechat-personal/accounts/{accountID}` | 获取租户的微信个人号账号 |
 | `GET` | `/v1/wechat-personal/accounts/{accountID}/actions` | 列出手动操作及其结果 |
 | `POST` | `/v1/wechat-personal/accounts/{accountID}/actions` | 排队一条手动消息或发布 |
+| `PUT` | `/v1/wechat-personal/accounts/{accountID}/binding` | Change the GeWe node for the same personal WeChat identity |
 | `GET` | `/v1/wechat-personal/accounts/{accountID}/capabilities` | 读取通道就绪状态 |
 | `POST` | `/v1/wechat-personal/accounts/{accountID}/check` | 检查 GeWe 实际在线状态 |
 | `GET` | `/v1/wechat-personal/accounts/{accountID}/contacts` | 读取 GeWe 联系人与群目录 |

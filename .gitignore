@@ -18,3 +18,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# handoff pack source material
+/agent-saas-docs-handoff-20261023/
+/*.zip
