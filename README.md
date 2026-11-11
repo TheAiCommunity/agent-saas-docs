@@ -36,3 +36,9 @@ python3 scripts/generate-api-reference.py <path-to-frontend-swagger.json> --zh
 ```
 
 The first command writes the English page, the second the Chinese page. The spec lives in the `agent-saas-service` repository at `docs/frontend-swagger.json`.
+
+`static/llms.txt` is the AI-readable index of every page. Regenerate it after adding or renaming pages:
+
+```bash
+python3 scripts/generate-llms.py
+```

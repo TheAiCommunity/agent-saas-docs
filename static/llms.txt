@@ -1,0 +1,51 @@
+# Jingya Agent docs
+
+> User guides and API documentation for Jingya Agent: writing methods, office tools and content platforms in one workspace. 鲸芽 Agent 的使用指南与 API 文档：写作方法、办公工具和内容平台在同一个工作空间。
+
+## English documentation
+
+- [Agent SaaS documentation home](https://docs.theaicommunity.net/): User guides and API documentation for Jingya Agent: writing methods, office tools and content platforms in one workspace.
+- [Jingya Agent user guide](https://docs.theaicommunity.net/docs/): From organizing your material to reviewable content, connecting tools and platforms as you need them.
+- [Tenant admin API](https://docs.theaicommunity.net/docs/developer/admin-api): The API behind the tenant management console.
+- [Content API reference](https://docs.theaicommunity.net/docs/developer/api-reference): Every endpoint of the Agent SaaS content API, grouped by area. Generated from the OpenAPI specification.
+- [Authentication](https://docs.theaicommunity.net/docs/developer/authentication): Signing in, token refresh, auth error codes, and session headers.
+- [API conventions](https://docs.theaicommunity.net/docs/developer/conventions): Response envelope, error format, headers, and data types shared by every endpoint.
+- [Examples](https://docs.theaicommunity.net/docs/developer/examples): End-to-end curl examples: sign in, list templates, create a task, check a run.
+- [Developer overview](https://docs.theaicommunity.net/docs/developer/overview): The APIs behind Agent SaaS, base URLs, and how to get access.
+- [Platform admin API](https://docs.theaicommunity.net/docs/developer/platform-api): The API behind the platform operations console.
+- [Accounts and sign-in](https://docs.theaicommunity.net/docs/getting-started/accounts): Confirm your tenant code, finish the first password change, and tell product accounts apart from platform authorizations.
+- [Quickstart: finish one text-organizing pass](https://docs.theaicommunity.net/docs/getting-started/quickstart): Sign in, install a method, send your material, and check the result.
+- [Assets, images and files](https://docs.theaicommunity.net/docs/guides/assets): Upload and manage content assets, and download office files after confirming them.
+- [Automation runs and schedules](https://docs.theaicommunity.net/docs/guides/automation): Set a generation schedule, verify the next run, and read the results.
+- [Create your first task](https://docs.theaicommunity.net/docs/guides/first-task): Finish a draft first, then set up a continuous content task as you need it.
+- [Review and publish](https://docs.theaicommunity.net/docs/guides/review-and-publish): Confirm the content, the delivery path and the final platform result separately.
+- [Plugins: install, configure and the real catalog](https://docs.theaicommunity.net/docs/integrations/mcp): What the 19 plugins do, their prerequisites, and how to use them in the workbench.
+- [Connect content platforms and enterprise apps](https://docs.theaicommunity.net/docs/integrations/platforms): The company prepares the app, users authorize as needed, then each action is checked.
+- [Changelog](https://docs.theaicommunity.net/docs/reference/changelog): Notable changes to the product and the API.
+- [FAQ](https://docs.theaicommunity.net/docs/reference/faq): Frequently asked questions about Agent SaaS.
+- [Glossary](https://docs.theaicommunity.net/docs/reference/glossary): Terms used throughout the product and the API.
+- [Skills: installing and using the 17 methods](https://docs.theaicommunity.net/docs/skills): Check traceable sources, install pinned versions, and pick this round's methods.
+
+## 简体中文文档
+
+- [鲸芽 Agent 文档首页](https://docs.theaicommunity.net/zh/): 鲸芽 Agent 的使用指南与 API 文档：写作方法、办公工具和内容平台在同一个工作空间。
+- [鲸芽 Agent 使用指南](https://docs.theaicommunity.net/zh/docs/): 从整理素材到可审阅内容，按需连接工具和平台。
+- [租户管理 API](https://docs.theaicommunity.net/zh/docs/developer/admin-api): 租户管理后台使用的 API。
+- [内容 API 参考](https://docs.theaicommunity.net/zh/docs/developer/api-reference): 鲸芽 Agent 内容 API 的全部接口，按功能分组，由 OpenAPI 规范自动生成。
+- [认证](https://docs.theaicommunity.net/zh/docs/developer/authentication): 登录、令牌刷新、认证错误码与会话请求头。
+- [API 约定](https://docs.theaicommunity.net/zh/docs/developer/conventions): 所有接口共用的响应格式、错误格式、请求头与数据类型。
+- [示例](https://docs.theaicommunity.net/zh/docs/developer/examples): 端到端 curl 示例：登录、列出模板、创建任务、查看运行。
+- [开发者概览](https://docs.theaicommunity.net/zh/docs/developer/overview): 鲸芽 Agent 背后的 API、基础地址与接入方式。
+- [平台管理 API](https://docs.theaicommunity.net/zh/docs/developer/platform-api): 平台运营后台使用的 API。
+- [账号与登录](https://docs.theaicommunity.net/zh/docs/getting-started/accounts): 确认租户编码、完成首次改密，并区分产品账号和平台授权。
+- [快速上手：完成一次文字整理](https://docs.theaicommunity.net/zh/docs/getting-started/quickstart): 登录、安装方法、发送材料并核对结果。
+- [素材、图片与文件](https://docs.theaicommunity.net/zh/docs/guides/assets): 上传并管理内容素材，确认后下载办公文件。
+- [自动化运行与排期](https://docs.theaicommunity.net/zh/docs/guides/automation): 设置生成计划，核对下一次运行并查看结果。
+- [创建第一个任务](https://docs.theaicommunity.net/zh/docs/guides/first-task): 先完成草稿，再按需要建立持续内容任务。
+- [审核与发布](https://docs.theaicommunity.net/zh/docs/guides/review-and-publish): 分别确认内容、交付路径和最终平台结果。
+- [插件：安装、配置与真实目录](https://docs.theaicommunity.net/zh/docs/integrations/mcp): 19 个插件的用途、接入前提和工作台使用方法。
+- [连接内容平台与企业应用](https://docs.theaicommunity.net/zh/docs/integrations/platforms): 公司准备应用，用户按需授权，再检查具体操作。
+- [更新日志](https://docs.theaicommunity.net/zh/docs/reference/changelog): 产品和 API 的重要变更。
+- [常见问题](https://docs.theaicommunity.net/zh/docs/reference/faq): 关于鲸芽 Agent 的常见问题。
+- [术语表](https://docs.theaicommunity.net/zh/docs/reference/glossary): 产品和 API 中使用的术语。
+- [Skills：安装与使用 17 项方法](https://docs.theaicommunity.net/zh/docs/skills): 查看可追溯来源，安装固定版本，并选择本轮方法。
